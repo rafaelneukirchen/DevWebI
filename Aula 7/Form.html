@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários - Aula 7</title>
+</head>
+    <body>
+        <input type="radio"/>
+
+        <select id="cars" name="cars" size="2" multiple>
+            <option value="fiat">fiat</option>
+            <option value="volvo">volvo</option>
+            <option value="mazda">mazda</option>
+            <option value="vogs">vogs</option>
+        </select>
+        
+        <form>
+            <datalist name="cars" id="cars">
+                <option value="fiat">fiat</option>
+                <option value="volvo">volvo</option>
+                <option value="mazda">mazda</option>
+                <option value="vogs">vogs</option>
+            </datalist>
+        </form>
+        <button type="button" onclick="hello()">Clica ai pai</button>
+    </body>
+
+    <script>
+        hello = () => {
+            alert("Salve Cachorro")
+        }
+    </script>
+</html>

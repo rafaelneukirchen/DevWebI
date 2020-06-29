@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regras de Animação</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: relative; /* posição relativa adicionada */
+            animation-name: example;
+            animation-duration: 4s;
+        }
+
+        @keyframes example {
+            0%   {background-color:red; left:0px; top:0px;}
+            25%  {background-color:yellow; left:200px; top:0px;}
+            50%  {background-color:blue; left:200px; top:200px;}
+            75%  {background-color:green; left:0px; top:200px;}
+            100% {background-color:red; left:0px; top:0px;}
+        }
+    </style>
+</head>
+<body>
+
+<p><b>Nota:</b> Recarregue a página para ver a animação novamente.</p>
+<p><b>Obs:</b> Quando a animação termina o elemento volta ao estilo original.</p>
+
+<div></div>
+
+
+
+
+</body>
+</html>

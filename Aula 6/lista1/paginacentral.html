@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			.padrao{
+				text-align: center;
+			}
+			.padraoletra{
+				text-decoration: none;
+				background-color: #cecece;
+				color: #fefefe;
+				font-size: 16px;
+				border: 1px solid #f1f1f1;
+				padding: 2px;
+				border-radius: 5px;
+			}
+			.footer {
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				text-align: center;
+			}
+			.box{
+				left:auto;
+				right: auto;
+				width: 150px;
+				border: 1px solid #303030;
+				border-radius: 10px;
+				background-color: white;
+				}
+		</style>
+		<title>Página Central dos Exercícios</title>
+	</head>
+	<body>
+		<div class="bg">
+			<div class ="padrao">
+				<h3>Página de lista de exercícios</h3>
+				<select class="box">
+					<option hidden value ="none" name="none" id="none"> Escolha uma Opção... </option>
+					<option value="exe1.html" name="item 1" id="ex1">item 1</option>
+					<option value="exe2.html" name="item 2" id="ex2">item 2</option>
+					<option value="exe3.html" name="item 3" id="ex3">item 3</option>
+					<option value="exe4.html" name="item 4" id="ex4">item 4</option>
+					<option value="exe5.html" name="item 5" id="ex5">item 5</option>
+				</select>
+			</div>
+			<div>
+				<p class="footer"> Rafael Silva Neukirchen - BSI2018 </p>
+			</div>
+		</div>
+		<script>
+			var select = document.querySelector('select');
+			select.addEventListener('change', function() {
+			var option = this.selectedOptions[0];
+			var texto = option.value;
+			window.location.href = texto;
+			})
+		</script>
+	</body>
+</html>

@@ -1,0 +1,338 @@
+/* --------- PADRÃO --------- */
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+hr{
+    background-color: #fff;
+}
+
+/* --------- HEADER --------- */
+
+.header{
+    position: sticky; /*<--------------- ALTERANDO DE FIXED PARA STICKY */
+    width: 100%;
+    height: 80px;
+    background-color: rgba(200, 200, 200, 0.5);
+    transition: 0.6s;
+    box-shadow: 1px 1px 10px gray;
+}
+
+.header:hover{
+    background-color: rgba(180,180,180,1);
+}
+
+.header h1{
+    font-weight: 100;
+    float: left;
+    color: black;
+    text-align: center;
+    margin-left: 50px;
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.header a{
+    float: right;
+    color: black;
+    text-align: center;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 22px;
+    padding: 3px;
+    font-weight: 100;
+}
+
+/* --------- BODY --------- */
+
+.body{
+    padding-top: 10px;  
+    width: 100%;
+    max-height: 2400px;
+    height: 80%;
+    background-color: #fff;
+}
+
+.body p{
+    text-align: center;
+    margin: 5px;
+}
+
+.grid {
+	display: grid;
+}
+
+.grid-itens {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.box{
+    background-color:#333;
+    border-radius:10px;
+    padding: 100px;
+    color:rgba(255,255,255,0);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:sans-serif;
+    margin: 5px;
+    font-size: 1vw;
+    }
+
+.box:hover{
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+}
+
+/* --------- SECOND BODY --------- */
+
+.titulocolorido{
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 2.0vw;
+  }
+
+.titulocolorido[id="2"]{
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    text-transform: lowercase;
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+  }
+
+.secondbody{
+    padding-top:10px;
+    width: 100%;
+    max-height: 2400px;
+    height: 80%;
+    background-color: #fff;
+}
+
+/* Fontes */
+
+.grid-itens2 {
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.roboto{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.sen{ 
+    font-family: 'Baloo Thambi 2', cursive;
+    font-weight: 600;
+}
+
+.baloo{
+    font-size: 1.2vw;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 500;
+}
+
+.comicNeue{
+    font-size: 1.2vw;
+    font-family: 'Comic Neue', cursive;
+    font-weight: 400;
+}
+
+.fontes{
+    font-size: 1.2vw;
+    text-align: center;
+    justify-content: center;
+}
+
+.fontes div span{
+    justify-content: left;
+    font-size: 1.2vw;
+    margin: 8px;
+    
+}
+
+.fontes div span[id='title']{
+    font-size: 1.8vw;
+}
+
+.fontes div span[id='text']{
+    font-size: 1.2vw;
+}
+
+.fontes div span[id='bold']{
+    font-size: 1.2vw;
+}
+
+.fontes div span[id='italic']{
+    font-size: 1.2vw;
+    font-style: italic;
+}
+
+/* --------- COLORS --------- */
+.maroon{
+    background-color: maroon;
+}
+.firebrick{
+    background-color: firebrick;
+}
+.red{
+    background-color: red;
+}
+.salmon{
+    background-color: salmon;
+}
+.gold{
+    background-color: gold;
+}
+.goldenrod{
+    background-color: goldenrod;
+}
+.olive{
+    background-color: olive;
+}
+.yellow{
+    background-color: yellow;
+}
+.yellowgreen{
+    background-color: yellowgreen;
+}
+.greenyellow{
+    background-color: greenyellow;
+}
+.chartreuse{
+    background-color: chartreuse;
+}
+.lawngreen{
+    background-color: lawngreen;
+}
+.green{
+    background-color: green;
+}
+.lime{
+    background-color: lime;
+}
+.limegreen{
+    background-color: limegreen;
+}
+.springgreen{
+    background-color: springgreen;
+}
+.turquoise{
+    background-color: turquoise;
+}
+.lightseagreen{
+    background-color: lightseagreen;
+}
+.mediumturquoise{
+    background-color: mediumturquoise;
+}
+.darkcyan{
+    background-color: darkcyan;
+}
+.aqua{
+    background-color: aqua;
+}
+.darkturquoise{
+    background-color: darkturquoise;
+}
+.dodgerblue{
+    background-color: dodgerblue;
+}
+.navy{
+    background-color: navy;
+}
+/* link cores https://www.imgonline.com.ua/eng/color-palette.php
+
+/* --------- BOTOES ----------- */
+
+.botoes{
+    width: 100%;
+    max-height: 2400px;
+    height: 80%;
+    background-color: #fff;
+}
+
+.grid-itens button{
+    padding: 10px;
+    color:transparent;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:sans-serif;
+    margin: 1%;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.grid-itens button[id="1"]{
+    background-color: #a3c0d1;
+    border-radius: 10px;
+    transition: 0.6s;
+    color:#fff;
+}
+
+.grid-itens button[id="2"]{
+    border-radius: 10px;
+    background-color: #dce321;
+}
+
+.grid-itens button[id="3"]{
+    color:#fff;
+    transition: 0.6s;
+    background-color: #12c1c2;
+}
+
+.grid-itens button[id="4"]{
+    background-color: #732020;
+}
+
+.grid-itens button:hover[id="1"]{
+    background-color: teal;
+}
+
+.grid-itens button:hover[id="2"]{
+    color:#fff;
+}
+
+.grid-itens button:hover[id="3"]{
+    background-color:#823732;
+}
+
+.grid-itens button:hover[id="4"]{
+    color:#fff;
+
+}
+
+
+
+/* --------- FOOTER --------- */
+
+.footer{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #bababa;
+}
+
+.footer img{
+    bottom: 0;
+    max-height: 200px;
+    width: 100%;
+}

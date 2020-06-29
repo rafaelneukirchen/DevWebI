@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .label {
+            float: left;
+        }
+
+        .text {
+            float: right;
+        }
+
+        .form {
+            display: grid;
+            width: 200px;
+        }
+
+        .form-box {
+            border: 1px solid gray;
+        }
+        .content {
+            padding:10px;
+            padding-top:0px;
+        }
+        .textarea { 
+            width: 99.5%;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Exercício - 4</title>
+</head>
+
+<body>
+    <div class="form-box">
+        <div class="content">
+            <h3>Formulário</h3>
+            <form class="form">
+                <label class="label">Nome:</label>
+                <input required class="text" type="text" placeholder="Otávio Teixeira" id="entrada">
+                <label class="label">E-mail:</label>
+                <input class="text" type="text" placeholder="meuEmail@xxxxx.com" id="entrada">
+                <label class="label">Telefone:</label>
+                <input class="text" type="text" placeholder="xx x xxxx-xxxx" maxlength="11" id="entrada">
+                <label class="label">Idade:</label>
+                <select size="1">
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option selected>19</option>
+                    <option>20</option>
+                </select>
+                <label class="label">Sexo:</label>
+            <form>
+                <input type="radio" id="masculino" name="gender" value="masculino">
+                <label for="masculino"> Masculino </label><br>
+                <input type="radio" id="Feminino" name="gender" value="Feminino">
+                <label for="Feminino"> Feminino </label><br>
+            </form>
+            <br>
+            <form>
+                <label> Tipo de Navegador Utilizado</label>
+                <input type="checkbox" id="GoogleChrome" name="navegador" value="GoogleChrome">
+                <label>Google Chrome</label>
+                <input type="checkbox" id="InternetExplorer" name="navegador" value="InternetExplorer">
+                <label>Internet Explorer</label>
+                <input type="checkbox" id="Firefox" name="navegador" value="Firefox">
+                <label>Firefox</label>
+                <input type="checkbox" id="Safari" name="navegador" value="Safari">
+                <label>Safari</label>
+                <input type="checkbox" id="Outros" name="navegador" value="Outros">
+                <label>Outros</label>
+            </form><br>
+            <label>Mensagem:</label><br>
+            <textarea class="textarea" placeholder="Escreva aqui sua mensagem..."></textarea>
+            <input type="submit"></input>
+            <button>Limpar</button>
+        </form>
+
+        </div>
+    </div>
+</body>
+
+</html>

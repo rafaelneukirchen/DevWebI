@@ -1,0 +1,9 @@
+/* Classe Stylesheet main que altera a cor do texto para azul*/
+.main{
+	color:blue;
+}
+
+/* Classe ID intro que altera o texto para Caixa Alta */
+#intro{
+	text-transform: uppercase;
+}
